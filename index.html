@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Service Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Vehicle Service Booking Form</h1>
+
+        <form id="serviceForm">
+
+            <label>Customer Name</label>
+            <input type="text" id="customerName" placeholder="Enter your name">
+
+            <label>Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter 10 digit phone number">
+
+            <label>Vehicle Number</label>
+            <input type="text" id="vehicleNumber" placeholder="Example: TN01AB1234">
+
+            <label>Vehicle Type</label>
+            <select id="vehicleType">
+                <option value="">Select Vehicle Type</option>
+                <option value="Car">Car</option>
+                <option value="Bike">Bike</option>
+                <option value="Scooter">Scooter</option>
+            </select>
+
+            <label>Service Type</label>
+            <select id="serviceType">
+                <option value="">Select Service Type</option>
+                <option value="General Service">General Service</option>
+                <option value="Oil Change">Oil Change</option>
+                <option value="Engine Service">Engine Service</option>
+                <option value="Full Service">Full Service</option>
+            </select>
+
+            <label>Preferred Date</label>
+            <input type="date" id="serviceDate">
+
+            <div class="buttons">
+
+                <button type="submit">Submit</button>
+
+                <button type="reset">Reset</button>
+
+            </div>
+
+        </form>
+
+        <div id="message"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
